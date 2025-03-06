@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AJ Recipes 🍵</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Average&family=Timmana&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+    <style>
+      #add:hover {
+        transform: scale(1.2); /* Scale up the icon */
+        color: #FF7400 !important; /* Change color to orange */
+      }
+    </style>
+   <!-- NAV BAR -->
+   <nav class="navbar navbar-expand-lg " style="background-color: black; padding: 0.3em !important;">
+    <div class="container-fluid" >
+      <a class="navbar-brand" href="#"><img src="./assets/logo-select.png" alt="" class="logo"><span
+         style="color: #FF7400 !important;">AJ</span></a>
+      <button class="navbar-toggler btn1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #FF7400 !important;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto" >
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./HTML/read-more.html">About Us</a>
+          </li>
+          <!-- first dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Varieties
+            </a>
+            <ul class="dropdown-menu" style="background-color: black; ">
+            
+              <li><a class="dropdown-item" href="./HTML/BreakfastRecipes.html" >Breakfast</a></li>
+              <li><a class="dropdown-item" href="./HTML/Lunch.html">Lunch</a></li>
+              <li><a class="dropdown-item" href="./HTML/VaritiesDinner.html">Dinner</a></li>
+              <li><a class="dropdown-item" href="./HTML/VegReciepe.html">Veg</a></li>
+              <li><a class="dropdown-item" href="./HTML/NonVegRecipe.html">Non-Veg</a></li>
+              <li><a class="dropdown-item" href="./HTML/Seafood.html">Sea-Food</a></li>
+              <li><a class="dropdown-item" href="./HTML/Drinks.html">Drinks</a></li>
+              <li><a class="dropdown-item" href="./HTML/VaritiesDessert.html">Desserts</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="./HTML/search.html">Search Something Else</a></li>
+            </ul>
+          </li>
+
+          <!-- second dropdown -->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle main" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Season Special
+            </a>
+            <ul class="dropdown-menu" style="background-color: black;">
+              <li><a class="dropdown-item" href="./HTML/SummerRecipes.html">Summer</a></li>
+              <li><a class="dropdown-item" href="./HTML/SpringRecipes.html">Spring</a></li>
+              <li><a class="dropdown-item" href="./HTML/FallRecipes.html">Fall</a></li>
+              <li><a class="dropdown-item" href="./HTML/WinterRecipes.html">Winter</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="./HTML/search.html">Search Something Else</a></li>
+            </ul>
+          </li>
+        
+
+        </ul>
+
+       <!-- right section div -->
+       <div >
+        <!-- search -->
+        <i class="fa-solid fa-magnifying-glass icon" onclick="window.location.href='./HTML/search.html'"></i>
+        <!-- likes -->
+        <a href=" ./HTML/wishlist.html"><i class="fa-solid fa-heart icon" ></i></a>
+        <!-- login/signin -->
+
+        <i id="profile"  class="fa-solid fa-user icon"></i>
+        <i style="color: white; font-size: 1.5em; transition: transform 0.3s, color 0.3s;" class="fa-solid fa-plus" id="add"></i>
+
+        <i id="logout" style="color: white; font-size:1.2m; margin-left: 4px;" class="fa-solid fa-right-from-bracket icon"></i>
+
+
+
+
+  
+
+
+      </div>
+
+
+
+      </div>
+    </div>
+  </nav>
+
+ 
+  <!-- hero section pic -->
+  <div class="image-container">
+    <div class="overlay">
+      <h1 class="main-heading1">"Healthy & Tasty Recipes"</h1>
+      <p class="para">"Indulge in nutritious meals that your taste buds will love. Start cooking today!"</p>
+    </div>
+    
+    <!-- The image -->
+    <img src="./assets/final.jpg" class="img-fluid" alt="..." style="height: auto; width: 100%; object-fit: contain;">
+  </div>
+
+
+  <!-- all recipes sections -->
+<div style="color: white; margin: auto 0; text-align: center; padding: 1em;">
+  <h1 class="main-heading" style="padding-bottom: 1em;  font-family: Timmana, serif;">Find Recipes For:</h1>
+
+  <!-- main circles -->
+
+  <div class="container text-center">
+    <div class="row align-items-start">
+      <!-- soup -->
+      <div class="col" style="min-width: 10em; text-align: center; padding: 10px;">
+        <img src="./assets/soup.jpeg" class="img-thumbnail" alt="Soup Image" 
+             style="border-radius: 50px; width: 10em; cursor: pointer;" 
+             onclick="window.location.href='./HTML/SoupRecipes.html';">
+        <div style="margin-top: 15px;  font-family: Timmana, serif; ">SOUP</div>
+      </div>
+      <!-- salad -->
+      <div class="col" style="min-width: 10em; text-align: center; padding: 10px;">
+        <img src="./assets/salad.jpeg" class="img-thumbnail" alt="Salad Image "
+         style="border-radius: 50px; width: 10em; cursor: pointer;" 
+             onclick="window.location.href='./HTML/SaladRecipes.html';">
+        <div style="margin-top: 15px;  font-family: Timmana, serif; ">SALAD</div>
+      </div>
+      <!-- vegan -->
+      <div class="col" style="min-width: 10em; text-align: center; padding: 10px;">
+        <img src="./assets/vegan.jpeg" class="img-thumbnail" alt="Vegan Image "
+        style="border-radius: 50px; width: 10em; cursor: pointer;" 
+            onclick="window.location.href='./HTML/VeganRecipes.html';">
+        <div style="margin-top: 15px;  font-family: Timmana, serif; ">VEGAN</div>
+      </div>
+      <!-- healthy -->
+      <div class="col" style="min-width: 10em; text-align: center; padding: 10px;">
+        <img src="./assets/healthy.jpg" class="img-thumbnail" alt=" Healthy Image "
+        style="border-radius: 50px; width: 10em; cursor: pointer;" 
+            onclick="window.location.href='./HTML/HealthyRecipes.html';">
+        <div style="margin-top: 15px;  font-family: Timmana, serif; ">HEALTHY</div>
+      </div>
+      <!-- dinner -->
+      <div class="col" style="min-width: 10em; text-align: center; padding: 10px;" >
+        <img src="./assets/dinner.jpg" class="img-thumbnail" alt=" Dinner Image "
+        style="border-radius: 50px; width: 10em; cursor: pointer;" 
+            onclick="window.location.href='./HTML/DinnerRecipes.html';">
+        <div style="margin-top: 15px;  font-family: Timmana, serif; ">DINNER</div>
+      </div>
+       <!-- dessert -->
+       <div class="col" style="min-width: 10em; text-align: center; padding: 10px;">
+        <img src="./assets/dessert.jpg" class="img-thumbnail" alt=" Dessert Image "
+        style="border-radius: 50px; width: 10em; cursor: pointer;" 
+            onclick="window.location.href='./HTML/DessertRecipes.html';">
+        <div style="margin-top: 15px;  font-family: Timmana, serif; ">DESSERT</div>
+      </div>
+
+    </div>
+          <!-- view more text -->
+    <a href="./HTML/ViewMoreRecipes.html" class="view" style=" margin-top: 10px; color: #FF7400;">VIEW MORE.....</a>
+
+  </div>
+
+</div>
+
+
+<!-- cards -->
+
+
+<div class="container mt-5">
+  <h1 class="main-heading" style="padding-bottom: 1em; text-align: center;  font-family: Timmana, serif;">Appetizers:</h1>
+
+<div class="recipe-grid">
+
+<!-- Recipe Card 1 -->
+<div class="recipe-card" id="spring-rolls-card">
+  <img src="./assets/spring-rollls.png" alt="Spring Rolls" class="recipe-image">
+  <div class="recipe-content">
+    <div class="recipe-header">
+      <h3 class="recipe-title">Spring Rolls</h3>
+      <button class="favorite-btn" onclick="event.stopPropagation(); this.classList.toggle('active')">
+        <i class="far fa-heart"></i>
+      </button>
+    </div>
+    <p class="recipe-description">Fresh or fried rolls filled with vegetables, shrimp, or chicken, often served with a tangy dipping sauce like peanut or hoisin sauce.</p>
+  </div>
+</div>
+
+    <!-- Recipe Card 2 -->
+    <div class="recipe-card" id="stuffed-mushrooms-card">
+      <img src="./assets/stuffed-mushrooms.jpg" alt="Stuffed Mushrooms" class="recipe-image">
+      <div class="recipe-content">
+        <div class="recipe-header">
+          <h3 class="recipe-title">Stuffed Mushrooms</h3>
+          <button class="favorite-btn" onclick="event.stopPropagation(); this.classList.toggle('active')">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <p class="recipe-description">Large mushroom caps filled with a savory stuffing, often made with cream cheese, garlic, breadcrumbs, and herbs.</p>
+      </div>
+    </div>
+
+    <!-- Recipe Card 3 -->
+    <div class="recipe-card" id="samosas-card">
+      <img src="./assets/samosas.jpg" alt="Samosas" class="recipe-image">
+      <div class="recipe-content">
+        <div class="recipe-header">
+          <h3 class="recipe-title">Samosas</h3>
+          <button class="favorite-btn" onclick="event.stopPropagation(); this.classList.toggle('active')">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <p class="recipe-description">Crispy, deep-fried pastries filled with spiced potatoes.</p>
+      </div>
+    </div>
+
+     <!-- Recipe Card 4 -->
+     <div class="recipe-card" id="chicken-wings-card">
+      <img src="./assets/chicken-wings.jpg" alt="Chicken wings" class="recipe-image">
+      <div class="recipe-content">
+        <div class="recipe-header">
+          <h3 class="recipe-title">Chicken wings</h3>
+          <button class="favorite-btn" onclick="event.stopPropagation(); this.classList.toggle('active')">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <p class="recipe-description">Chicken wings coated with a spicy sauce, BBQ sauce, or honey mustard, and then baked or deep-fried to crispy perfection.</p>
+      </div>
+    </div>
+
+    <!-- Recipe Card 5 -->
+    <div class="recipe-card" id="fries-card">
+      <img src="./assets/fries.jpg" alt="Fries" class="recipe-image">
+      <div class="recipe-content">
+        <div class="recipe-header">
+          <h3 class="recipe-title">Fries</h3>
+          <button class="favorite-btn" onclick="event.stopPropagation(); this.classList.toggle('active')">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <p class="recipe-description">Golden and crispy on the outside, fluffy and tender on the inside. Crunchy fries cooked to perfection, sprinkled with a pinch of salt and served hot.</p>
+      </div>
+    </div>
+
+     <!-- Recipe Card 6 -->
+     <div class="recipe-card" id="egg-card">
+      <img src="./assets/deviled eggs.jpg" alt="Deviled Eggs" class="recipe-image">
+      <div class="recipe-content">
+        <div class="recipe-header">
+          <h3 class="recipe-title">Deviled Eggs</h3>
+          <button class="favorite-btn" onclick="event.stopPropagation(); this.classList.toggle('active')">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <p class="recipe-description">Hard-boiled eggs halved and filled with a creamy, tangy mixture of egg yolk, mayonnaise, mustard, and spices.</p>
+      </div>
+    </div>
+
+  </div>
+
+       <!-- view more text -->
+       <a href="./HTML/AppetizerRecipes.html" class="view" style=" margin-top: 10px; color: #FF7400;">VIEW MORE.....</a>
+
+
+  <!-- Search section -->
+
+  <h1 class="main-heading" style="padding-bottom: 1em; text-align: center;  font-family: Timmana, serif;">What would you like to cook?</h1>
+  <!-- input section -->
+  <div class="input-group mb-3">
+    <!-- <input type="text" class="form-control" placeholder="Search Here..." aria-label="Recipient's username" aria-describedby="basic-addon2"> -->
+      <input 
+          type="text" 
+          class="form-control" 
+          placeholder="Search Here..." 
+          onclick="window.location.href='./HTML/search.html';" 
+          style="cursor: pointer;"
+      >
+    <input style=" font-family: Timmana, serif; background-color: #FF7400; color: white;" class="btn " type="submit" value="Submit"> 
+  </div>
+
+  <h1 class="main-heading"  style=" font-family: Timmana, serif;">Most searched:</h1>
+  <!-- options to select -->
+  <div class="container text-center" >
+    <div class="row row1 align-items-start">
+      <div style="  font-family: Timmana, serif; background-color: #000000; border: 1px solid white; margin: 0 1em; color: #FF7400; width: 250px; margin-top: 1em;">
+        <a class="nav-link " href="./HTML/BiryaniRecipes.html">Biryani</a>
+      </div>
+      <div style=" font-family: Timmana, serif;  background-color: #000000; border: 1px solid white; margin: 0 1em; color: #FF7400; width: 250px; margin-top: 1em;">
+        <a class="nav-link " href="./HTML/MacaroniRecipes.html">Macaroni</a>
+      </div>
+      <div style=" font-family: Timmana, serif; background-color: #000000; border: 1px solid white; margin: 0 1em; color: #FF7400; width: 250px; margin-top: 1em;">
+        <a class="nav-link " href="./HTML/KababRecipes.html">Kabab</a>
+      </div>
+      <div style=" font-family: Timmana, serif; background-color: #000000; border: 1px solid white; margin: 0 1em; color: #FF7400; width: 250px; margin-top: 1em;">
+        <a class="nav-link " href="./HTML/FriesRecipes.html">Fries</a>
+      </div>
+      <div style=" font-family: Timmana, serif; background-color: #000000; border: 1px solid white; margin: 0 1em; color: #FF7400; width: 250px; margin-top: 1em;">
+        <a class="nav-link " href="./HTML/ChocolateRecipes.html">Chocolate</a>
+      </div>
+      <div style=" font-family: Timmana, serif; background-color: #000000; border: 1px solid white; margin: 0 1em; color: #FF7400; width: 250px; margin-top: 1em;">
+        <a class="nav-link " href="./HTML/MushroomRecipes.html">Mushroom Filled</a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- once again section -->
+
+  
+
+  <div class="container text-center" >
+    <div class="row row1 align-items-start">
+      <div style=" font-family: Timmana, serif; background-color: #000000; border: 1px solid white; margin: 0 1em; color: #FF7400; width: 250px; margin-top: 1em;">
+        <a class="nav-link " href="./HTML/SaladRecipes.html">Salad</a>
+      </div>
+      <div style="  font-family: Timmana, serif; background-color: #000000; border: 1px solid white; margin: 0 1em; color: #FF7400; width: 250px; margin-top: 1em;">
+        <a class="nav-link " href="./HTML/CakeRecipes.html">Cake</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!--again cards for our best recipes -->
+
+
+<div class="container mt-5">
+  <h1 class="main-heading" style="padding-bottom: 1em; text-align: center;  font-family: Timmana, serif; ">Our best recipes:</h1>
+
+<div class="recipe-grid">
+
+    <!-- Recipe Card 1 -->
+    <div class="recipe-card" id="burger-card">
+      <img src=".//assets/burger.jpg" alt="Burger" class="recipe-image">
+      <div class="recipe-content">
+        <div class="recipe-header">
+          <h3 class="recipe-title">Burger</h3>
+          <button class="favorite-btn" onclick="event.stopPropagation(); this.classList.toggle('active')">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <p class="recipe-description">A savory delight, this mouthwatering burger features a perfectly grilled patty, crispy bacon, melted cheddar cheese, and fresh lettuce and tomato, all sandwiched between a toasted bun. Served hot and ready to satisfy your cravings!.</p>
+      </div>
+    </div>
+
+    <!-- Recipe Card 2 -->
+    <div class="recipe-card" id="chicken-card">
+      <img src="./assets/full-chicken.jpg" alt="Grilled Chicken" class="recipe-image">
+      <div class="recipe-content">
+        <div class="recipe-header">
+          <h3 class="recipe-title">Grilled Chicken</h3>
+          <button class="favorite-btn" onclick="event.stopPropagation(); this.classList.toggle('active')">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <p class="recipe-description">A whole chicken, marinated to perfection and grilled to a golden brown, with a crispy skin and juicy meat. The aroma of smoky spices and herbs fills the air, tempting your taste buds. A delicious and satisfying meal, perfect for any occasion!</p>
+      </div>
+    </div>
+
+    <!-- Recipe Card 3 -->
+    <div class="recipe-card" id="biryani-card">
+      <img src="./assets/biryani.jpg" alt="Biryani" class="recipe-image">
+      <div class="recipe-content">
+        <div class="recipe-header">
+          <h3 class="recipe-title">Biryani</h3>
+          <button class="favorite-btn" onclick="event.stopPropagation(); this.classList.toggle('active')">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <p class="recipe-description">Aromatic and savory, this mouthwatering biryani is a perfect blend of fragrant basmati rice, tender meat or vegetables, and a mix of warming spices. Each bite is a harmonious balance of flavors, textures, and colors, leaving you craving for more!</p>
+      </div>
+    </div>
+
+     <!-- Recipe Card 4 -->
+     <div class="recipe-card" id="rasmalai-card">
+      <img src="./assets/Rasmalai.jpg" alt="Rasmalai" class="recipe-image">
+      <div class="recipe-content">
+        <div class="recipe-header">
+          <h3 class="recipe-title">Rasmalai</h3>
+          <button class="favorite-btn" onclick="event.stopPropagation(); this.classList.toggle('active')">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <p class="recipe-description"> Rasmalai, creamy paneer soaked in a sweet and fragrant milk syrup, flavored with cardamom and sugar.</p>
+      </div>
+    </div>
+
+    <!-- Recipe Card 5 -->
+    <div class="recipe-card" id="pizza-card">
+      <img src="./assets/pizza.jpg" alt="Pizza" class="recipe-image">
+      <div class="recipe-content">
+        <div class="recipe-header">
+          <h3 class="recipe-title">Pizza</h3>
+          <button class="favorite-btn" onclick="event.stopPropagation(); this.classList.toggle('active')">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <p class="recipe-description">Mouthwatering pizza with crispy crust, tangy sauce, melted cheese & your favorite toppings!</p>
+      </div>
+    </div>
+
+     <!-- Recipe Card 6 -->
+     <div class="recipe-card" id="pakoray-card">
+      <img src="./assets/pakoray.jpg" alt="Pakoray" class="recipe-image">
+      <div class="recipe-content">
+        <div class="recipe-header">
+          <h3 class="recipe-title">Pakoray</h3>
+          <button class="favorite-btn" onclick="event.stopPropagation(); this.classList.toggle('active')">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <p class="recipe-description">Crispy, golden-brown pakoras, freshly fried to perfection! Spicy, crunchy, and delicious.</p>
+      </div>
+    </div>
+
+  </div>
+
+       <!-- view more text -->
+       <a href="./HTML/BestRecipes.html" class="view" style=" margin-top: 10px; color: #FF7400;">VIEW MORE.....</a>
+
+  <!-- About Us section -->
+
+  <h1 class="main-heading " id="unique-aboutus" style="padding-bottom: 1em; text-align: center;  font-family: Timmana, serif; ">About Us:</h1>
+
+  <section  id="about-us" style="padding: 50px 0; background-color: #1c1c1c; color: #FF7400; text-align: center;">
+    <div class="container">
+      <h2 style="font-size: 2.5em; font-weight: bold;  font-family: Timmana, serif;">About AJ</h2> 
+      <img src="./assets/logo-select.png" class="logo" alt="">
+      <p style="font-size: 1.2em; margin: 20px 0;  font-family: Timmana, serif;">
+        Welcome to <strong>AJ</strong>, your ultimate destination for fiery and flavorful recipes! We specialize in creating spicy, sizzling dishes that bring the heat to your kitchen. From savory starters to sizzling mains, our recipes are perfect for those who love to add a little extra spice to their lives. Whether you are a seasoned chef or a beginner, AJ has something for everyone!
+      </p>
+      <p style="font-size: 1.2em; margin: 20px 0;  font-family: Timmana, serif;">
+        At AJ, we believe food should be an adventure, and every bite should bring excitement and warmth. Get ready to explore bold flavors, vibrant spices, and mouth-watering dishes. Ready to set your taste buds on fire? 🔥
+      </p>
+      <a href="./HTML/read-more.html"  class="btn btn-hover" style="font-size: 1.2em; padding: 10px 30px; padding-bottom: 5px; border-radius: 20px; border-color: #FF7400; color: #FF7400; font-family: Timmana, serif; ">Read More</a>
+    </div>
+  </section>
+
+
+
+  <!--again cards for desi hits -->
+
+
+<div class="container mt-5">
+  <h1 class="main-heading" style="padding-bottom: 1em; text-align: center;  font-family: Timmana, serif; ">Desi hits:</h1>
+
+<div class="recipe-grid">
+
+    <!-- Recipe Card 1 -->
+    <div class="recipe-card" id="nihari-card">
+      <img src="./assets/nihari.jpg" alt="Nihari" class="recipe-image">
+      <div class="recipe-content">
+        <div class="recipe-header">
+          <h3 class="recipe-title">Nihari</h3>
+          <button class="favorite-btn" onclick="event.stopPropagation(); this.classList.toggle('active')">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <p class="recipe-description">Rich, flavorful Nihari stew made with tender lamb/beef, aromatic spices & herbs.</p>
+      </div>
+    </div>
+
+    <!-- Recipe Card 2 -->
+    <div class="recipe-card" id="kofta-card">
+      <img src="./assets/koftay.jpg" alt="Kofta" class="recipe-image">
+      <div class="recipe-content">
+        <div class="recipe-header">
+          <h3 class="recipe-title">Kofta</h3>
+          <button class="favorite-btn" onclick="event.stopPropagation(); this.classList.toggle('active')">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <p class="recipe-description">Tender, flavorful koftas simmered in a rich, aromatic curry sauce, infused with warm spices, herbs, and a hint of creaminess. A classic Pakistani dish, perfect for special occasions or cozy nights in!</p>
+      </div>
+    </div>
+
+    <!-- Recipe Card 3 -->
+    <div class="recipe-card" id="saag-card">
+      <img src="./assets/saag.jpg" alt="Saag" class="recipe-image">
+      <div class="recipe-content">
+        <div class="recipe-header">
+          <h3 class="recipe-title">Saag</h3>
+          <button class="favorite-btn" onclick="event.stopPropagation(); this.classList.toggle('active')">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <p class="recipe-description">Spicy mustard green curry made with tender leaves & warming spices.</p>
+      </div>
+    </div>
+
+     <!-- Recipe Card 4 -->
+     <div class="recipe-card" id="gajar-card">
+      <img src="./assets/gajar-halwa.jpg" alt="Gajar-Halwa" class="recipe-image">
+      <div class="recipe-content">
+        <div class="recipe-header">
+          <h3 class="recipe-title">Gajar-Halwa</h3>
+          <button class="favorite-btn" onclick="event.stopPropagation(); this.classList.toggle('active')">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <p class="recipe-description">A traditional dessert made with grated carrots, milk, sugar, and spices, slow-cooked to perfection. Rich, creamy, and utterly delicious!".</p>
+      </div>
+    </div>
+
+    <!-- Recipe Card 5 -->
+    <div class="recipe-card" id="lassi-card">
+      <img src="./assets/lassi.jpg" alt="Lassi" class="recipe-image">
+      <div class="recipe-content">
+        <div class="recipe-header">
+          <h3 class="recipe-title">Lassi</h3>
+          <button class="favorite-btn" onclick="event.stopPropagation(); this.classList.toggle('active')">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <p class="recipe-description"> A refreshing, yogurt-based drink, perfect for hot summer days!"</p>
+      </div>
+    </div>
+
+     <!-- Recipe Card 6 -->
+     <div class="recipe-card" id="kabab-card">
+            <img src="./assets/chapli-kebab.jpg" alt="Chapli-kebab" class="recipe-image">
+      <div class="recipe-content">
+        <div class="recipe-header">
+          <h3 class="recipe-title">Chapli-kebab</h3>
+          <button class="favorite-btn" onclick="event.stopPropagation(); this.classList.toggle('active')">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <p class="recipe-description"> flat kebab made with minced meat (beef or lamb), spices, and herbs, formed into a round patty and fried until crispy and golden.</p>
+      </div>
+    </div>
+
+  </div>
+
+         <!-- view more text -->
+         <a href="./HTML/DesiRecipes.html" class="view" style=" margin-top: 10px; color: #FF7400;">VIEW MORE.....</a>
+
+
+
+ <!-- Rating Section -->
+ <section id="rating-section" style="margin-top: 20px;">
+  <h3>Rate this website!</h3>
+  <div id="stars" class="rating">
+      <span class="star" data-value="1">⭐</span>
+      <span class="star" data-value="2">⭐</span>
+      <span class="star" data-value="3">⭐</span>
+      <span class="star" data-value="4">⭐</span>
+      <span class="star" data-value="5">⭐</span>
+  </div>
+  <button id="submit-rating">Submit Rating</button>
+  <p id="rating-message"></p>
+  <!-- comments -->
+  <div id="comment-section">
+    <h3>Add a Comment for Us</h3>
+    <button id="commentButton">Add Comment</button>
+</div>
+</section>
+    </div>
+    </div>
+    </div>
+
+
+
+   <!-- footer -->
+
+<div class="footer">
+  <div>
+       <h1 class="logo-foot">  <span class="logo-span"> <img class="widimg" src="https://github.com/alishaayyyy/AJ-project/blob/main/assets/logo-select.png?raw=true" alt="">A</span> <span class="span-s"> J</h1>
+  <div class="icon-box">
+      <i class="fa-brands fa-instagram font icons"></i>
+      <i class="fa-brands fa-youtube icons utube "></i>
+      <i class="fa-brands fa-facebook-f icons facebook"></i>
+      <i class="fa-brands fa-pinterest-p icons pint"></i>
+  </div>
+  </div>
+  
+  <div class="middle-sec">
+      <ul class="sec-ul font-wf">
+          <li><a class="nav-link " href="./index.html">Home</a></li>
+          <li><a class="nav-link " href="./HTML/read-more.html">About</a></li>
+          <li><a class="nav-link " href="./HTML/BreakfastRecipes.html">Varieties</a></li>
+          <li><span id="special"><a class="nav-link " href="./HTML/BestRecipes.html">Season special</a></span></li>
+      </ul>
+  </div>
+
+  <div class="policy" ><h4>Privacy Policy</h4>
+    
+      <p>"We ensure that your personal information is kept secure and not shared with any third-party.
+        Your data is only used to provide better services on our website."</p>
+ </div>
+  
+ <div class="policy"><h2 class="orng">Thank You</h2>
+        
+  <p class="text-center">"Your support and interest mean the world to us We're dedicated to bringing you the best recipes and culinary experiences from around the world. Stay tuned for more delicious updates!".</p>
+</div>
+  </div>
+
+<div class="copyrigth">
+   <span class="cop-grey">&copy; 2025 AJ. All rights reserved</span>  <h1 class="logo-foot"><span class="logo-span logo-b">A</span>  J</h1>
+</div> 
+
+
+
+
+<script>
+    document.getElementById("spring-rolls-card").addEventListener("click", function() {
+    window.location.href = "./HTML/springroll.html";
+});
+document.getElementById("stuffed-mushrooms-card").addEventListener("click", function() {
+    window.location.href = "./HTML/stuffed-mushrooms.html";
+});
+document.getElementById("samosas-card").addEventListener("click", function() {
+    window.location.href = "./HTML/samosas.html";
+});
+document.getElementById("chicken-wings-card").addEventListener("click", function() {
+    window.location.href = "./HTML/chicken-wings.html";
+});
+document.getElementById("fries-card").addEventListener("click", function() {
+    window.location.href = "./HTML/FriesRecipes.html";
+});
+  document.getElementById("egg-card").addEventListener("click", function() {
+    window.location.href = "./HTML/DeviledEggs.html";
+});   
+document.getElementById("burger-card").addEventListener("click", function() {
+    window.location.href = "./HTML/Burger.html";
+});
+document.getElementById("chicken-card").addEventListener("click", function() {
+    window.location.href = "./HTML/GrilledChicken.html";
+});     
+document.getElementById("biryani-card").addEventListener("click", function() {
+    window.location.href = "./HTML/BiryaniRecipes.html";
+});
+document.getElementById("rasmalai-card").addEventListener("click", function() {
+    window.location.href = "./HTML/Rasmalai.html";
+});
+document.getElementById("pizza-card").addEventListener("click", function() {
+    window.location.href = "./HTML/Pizza.html";
+});
+document.getElementById("pakoray-card").addEventListener("click", function() {
+    window.location.href = "./HTML/Pakoray.html";
+});
+document.getElementById("nihari-card").addEventListener("click", function() {
+    window.location.href = "./HTML/Nihari.html";
+});
+document.getElementById("kofta-card").addEventListener("click", function() {
+    window.location.href = "./HTML/Kofta.html";
+});
+document.getElementById("saag-card").addEventListener("click", function() {
+    window.location.href = "./HTML/Saag.html";
+});
+document.getElementById("gajar-card").addEventListener("click", function() {
+    window.location.href = "./HTML/Gajar-Halwa.html";
+});
+document.getElementById("lassi-card").addEventListener("click", function() {
+    window.location.href = "./HTML/Lassi.html";
+});
+  document.getElementById("kabab-card").addEventListener("click", function() {
+    window.location.href = "./HTML/KababRecipes.html";
+});
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script type="module" src="./js/logout.js"></script>
+    <script type="module" src="./js/app.js"></script>
+    <script type="module" src="./js/comment.js"></script>
+  </body>
+</html>
